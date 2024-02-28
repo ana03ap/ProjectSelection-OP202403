@@ -236,9 +236,15 @@ nav {
     cursor: pointer;
 }
 
-
+#team-members{
+    background-color: #3ab54a;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* css solo de las cartas, info sacada de la api */
-.cards{
+.card{
     /* height: 14pc; */
     background-color: #232323;
     margin: 0.5pc;
@@ -253,6 +259,8 @@ nav {
     height: 10pc;
     width: 10pc;
     border-radius: 50%;
+    margin-bottom: 3pc;
+    margin-top:1pc;
 }
 .name{
     font-size: 1.5pc;
@@ -263,13 +271,20 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
+.bio{
+    width: 80%;
+    text-align: justify;
+}
+
 .nombre_img{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
 
 
 #root{
