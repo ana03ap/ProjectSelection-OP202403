@@ -20,7 +20,7 @@ body {
 /*HEADER CSS */
 
 header, footer {
-    background-color: #3ab54a;  
+    background-color: #5f3ab5;  
 }
 
 header{
@@ -115,7 +115,7 @@ nav {
 }
 
 #team{
-    border: 1px solid yellow;  
+  
 display: flex;
 flex-direction: column;
 justify-content: center;

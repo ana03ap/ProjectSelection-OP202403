@@ -11,7 +11,8 @@
     list-style: none;
     text-decoration: none;
     outline: none;
-    border: 1px solid red;  
+    /* 
+     */
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 /*HEADER CSS */
 
 header, footer {
-    background-color: #3ab54a;  
+    background-color: #5f3ab5;  
 }
 
 header{
@@ -101,7 +102,7 @@ nav {
 #mode {
     border: none;
     margin-right: 2pc;
-    background-color: #3ab54a;
+    background-color: #5f3ab5;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     font-weight: 200;
