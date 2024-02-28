@@ -1,0 +1,284 @@
+:root {
+    /* --bg-body: #000;
+    --color-text: #fff; */
+
+    
+    --bg-body: #fff;
+    --color-text: #000; 
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    /* 
+     */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--color-text);
+}
+
+/*HEADER CSS */
+
+header, footer {
+    background-color: #8065bd;  
+}
+
+header{
+    height: 4pc;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-left: 2pc;
+   padding-right: 2pc;
+
+}
+
+nav {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#menu{
+    width: 20pc;
+}
+
+#menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+#menu ul li {
+    display: flex;
+    gap: 2pc;
+    cursor: pointer;
+}
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+#izquierdaHeader {
+    display: flex;
+    align-items: center;
+   
+}
+
+/* .imgHeader{
+    width: 38px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.imgHeader img {
+    width: 100%;
+    height: 100%;
+} */
+
+#izquierdaHeader h4 {
+    /* color: var(--secondary-color); */
+    font-weight: 500;
+}
+
+
+
+
+#title{
+    padding: 5pc 0 5pc 0;
+    height: 90hv;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title h1{
+    font-size: 90px;
+
+}
+
+#title h4{
+    font-size: 45px;
+    color: rgb(133, 133, 133);
+    
+}
+
+
+
+/*cambia dependiendo de modo*/
+.element {
+    display: flex;
+    /* height: 100vh; */
+    gap: 1pc;
+    margin:3pc 0;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 16px;
+
+}
+
+.contenido h1 {
+    font-family: 'Tektur', cursive;
+    font-weight: 900;
+    margin-bottom: 2pc;
+}
+
+.contenido p {
+    margin-bottom: 12px;
+}
+
+.imageElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imageContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.img_uno {
+    width: 496px;
+    height: 423px;
+
+}
+.img_dos {
+    width: 496px;
+    height: 216px;
+}
+
+.img_tres {
+    width: 496px;
+    height: 370px;
+}
+
+
+.fetch {
+    margin-right: 20px;
+}
+
+.fetch h1 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px ) {
+    .element{
+        flex-direction: column;
+        align-items: center;
+        padding: 1pc;
+        height: auto;
+        gap: 1pc;
+        margin:1pc 0;
+    }
+    .element:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .element div{
+        width: 100%;
+        margin: 0;
+    }
+    #root{
+        grid-template-columns: 1fr;
+    }
+    .message h1{
+        font-size: 4pc;
+    }
+    .message p{
+        font-size: 1.5pc;
+    }
+    #titulo-buscador{
+        display: none;
+    }
+    #input-buscar input{
+        padding: 0.4pc;
+        border-radius: 6px;
+        border:none;
+    }
+    #arrow-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 1057px ) {
+    #root{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 800px ) {
+    .element{
+        flex-direction: column;
+        align-items: center;
+        padding: 1pc;
+        height: auto;
+        gap: 1pc;
+        margin:1pc 0;
+    }
+    .element:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .element div{
+        width: 100%;
+        margin: 0;
+    }
+    .message h1{
+        font-size: 4pc;
+    }
+    .message p{
+        font-size: 1.5pc;
+    }
+    #titulo-buscador{
+        display: none;
+    }
+    #input-buscar input{
+        padding: 0.4pc;
+        border-radius: 6px;
+        border:none;
+    }
+    #arrow-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

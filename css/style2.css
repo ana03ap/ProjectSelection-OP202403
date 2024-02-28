@@ -7,12 +7,12 @@
     /* border: 1px solid red;   */
 }
 :root {
-    --bg-body: #000;
-    --color-text: #fff;
+    --bg-body: #ff;
+    --color-text: #000;
 }
 
 body {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Poppins", sans-serif;
     background-color: var(--bg-body);
     color: var(--color-text);
 }
@@ -24,10 +24,11 @@ header, footer {
 }
 
 header{
-    height: 3pc;
+    height: 4pc;
 }
 
 header{
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,8 +127,9 @@ gap: 5pc
 /* css solo de las cartas, info sacada de la api */
 
 .card{
+    color: white;
     /* height: 14pc; */
-    background-color: #232323;
+    background-color: #727070;
     margin: 0.5pc;
     display: flex;
     padding: 1pc 3pc;
