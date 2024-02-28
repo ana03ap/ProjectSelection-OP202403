@@ -1,0 +1,366 @@
+:root {
+    --bg-body: #000;
+    --color-text: #fff;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    
+    /* border: 1px solid black;  */
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: var(--bg-body);
+    color: var(--color-text);
+}
+
+/*HEADER CSS */
+
+.header, footer {
+    background-color: #3ab54a;
+    padding: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#izquierdaHeader {
+    display: flex;
+    align-items: center;
+    margin-left: 2pc;
+}
+
+.imgHeader{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.imgHeader img {
+    width: 100%;
+    height: 100%;
+}
+
+#izquierdaHeader h4 {
+    /* color: var(--secondary-color); */
+    font-weight: 200;
+}
+
+#mode {
+    border: none;
+    margin-right: 2pc;
+    background-color: #3ab54a;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 200;
+    /* color: var(--secondary-color); */
+    cursor: pointer;
+}
+
+/*CSS PRIMER MENSAJE */
+.message {
+    /* height: 90vh; */
+    width: 100%;
+}
+
+.message h1 {
+    margin-top: 1pc;
+    font-family: 'Tektur', cursive;
+    font-weight: 800;
+    text-align: center;
+    font-size: 90px;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2pc 0 2pc 0;
+}
+
+.languages p {
+    margin-right: 1pc;
+    font-family: 'Tektur', cursive;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+/*CSS flecha */
+#arrow-down {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2pc;
+}
+
+#arrow-down  {
+    cursor: pointer;
+    font-size: 6pc
+}
+
+
+/*cambia dependiendo de modo*/
+.element {
+    display: flex;
+    /* height: 100vh; */
+    gap: 1pc;
+    margin:3pc 0;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 16px;
+
+}
+
+.contenido h1 {
+    font-family: 'Tektur', cursive;
+    font-weight: 900;
+    margin-bottom: 2pc;
+}
+
+.contenido p {
+    margin-bottom: 12px;
+}
+
+.imageElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imageContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.img_uno {
+    width: 496px;
+    height: 423px;
+
+}
+.img_dos {
+    width: 496px;
+    height: 216px;
+}
+
+.img_tres {
+    width: 496px;
+    height: 370px;
+}
+
+
+.fetch {
+    margin-right: 20px;
+}
+
+.fetch h1 {
+    text-align: center;
+}
+
+
+
+
+#container-buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3ab54a;
+    padding: 2px;
+    margin-bottom: 2pc;
+}
+
+#izquierda-buscador {
+    display: flex;
+    align-items: center;
+    margin-left: 2pc;
+}
+
+#imagen-buscador{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+#imagen-buscador img {
+    width: 100%;
+    height: 100%;
+}
+
+#titulo-buscador {
+    font-weight: 200;
+}
+
+#input-buscador {
+    border: none;
+    margin-right: 2pc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 200;
+    /* color: var(--secondary-color); */
+}
+
+#root{
+    margin: 8px;
+}
+/* contenedor del buscador css */
+
+#botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+    padding-bottom: 1pc;
+}
+
+#beforeBtn, #afterBtn{
+    width: 2pc;
+    height: 2pc;
+}
+
+#arrow-up{
+    font-size: 3pc;
+    cursor: pointer;
+}
+
+
+/* css solo de las cartas, info sacada de la api */
+.cards{
+    /* height: 14pc; */
+    background-color: #232323;
+    margin: 0.5pc;
+    display: flex;
+    padding: 1pc;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.image{
+    height: 10pc;
+    width: 10pc;
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.5pc;
+    align-items: center;
+}
+.cards_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.nombre_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#root{
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+
+
+@media screen and (max-width: 800px ) {
+    .element{
+        flex-direction: column;
+        align-items: center;
+        padding: 1pc;
+        height: auto;
+        gap: 1pc;
+        margin:1pc 0;
+    }
+    .element:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .element div{
+        width: 100%;
+        margin: 0;
+    }
+    #root{
+        grid-template-columns: 1fr;
+    }
+    .message h1{
+        font-size: 4pc;
+    }
+    .message p{
+        font-size: 1.5pc;
+    }
+    #titulo-buscador{
+        display: none;
+    }
+    #input-buscar input{
+        padding: 0.4pc;
+        border-radius: 6px;
+        border:none;
+    }
+    #arrow-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 1057px ) {
+    #root{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 800px ) {
+    .element{
+        flex-direction: column;
+        align-items: center;
+        padding: 1pc;
+        height: auto;
+        gap: 1pc;
+        margin:1pc 0;
+    }
+    .element:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .element div{
+        width: 100%;
+        margin: 0;
+    }
+    .message h1{
+        font-size: 4pc;
+    }
+    .message p{
+        font-size: 1.5pc;
+    }
+    #titulo-buscador{
+        display: none;
+    }
+    #input-buscar input{
+        padding: 0.4pc;
+        border-radius: 6px;
+        border:none;
+    }
+    #arrow-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
