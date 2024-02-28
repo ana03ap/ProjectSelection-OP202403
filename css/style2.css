@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    /* border: 1px solid red;   */
+}
+:root {
+    --bg-body: #000;
+    --color-text: #fff;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: var(--bg-body);
+    color: var(--color-text);
+}
+
+/*HEADER CSS */
+
+header, footer {
+    background-color: #3ab54a;  
+}
+
+header{
+    height: 3pc;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-left: 2pc;
+   padding-right: 2pc;
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#menu{
+    width: 20pc;
+}
+#menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+#menu ul li {
+    display: flex;
+    gap: 2pc;
+    cursor: pointer;
+}
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+#izquierdaHeader {
+    display: flex;
+    align-items: center;
+   
+}
+
+/* .imgHeader{
+    width: 38px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.imgHeader img {
+    width: 100%;
+    height: 100%;
+} */
+
+#izquierdaHeader h4 {
+    /* color: var(--secondary-color); */
+    font-weight: 500;
+}
+
+#title{
+    padding: 5pc 0 5pc 0;
+    height: 90hv;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title h1{
+    font-size: 90px;
+
+}
+
+#title h4{
+    font-size: 45px;
+    color: rgb(133, 133, 133);
+    
+}
+
+#team{
+    border: 1px solid yellow;  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5pc
+}
+
+/* css solo de las cartas, info sacada de la api */
+
+.card{
+    /* height: 14pc; */
+    background-color: #232323;
+    margin: 0.5pc;
+    display: flex;
+    padding: 1pc 3pc;
+
+    justify-content: space-around;
+    /* flex-direc
+    tion: column; */
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 60%;
+}
+.image{
+    height: 10pc;
+    width: 10pc;
+    border-radius: 50%;
+    margin-bottom: 3pc;
+    margin-top:1pc;
+}
+.name{
+    font-size: 1.5pc;
+    align-items: center;
+}
+.cards_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio{
+    width: 80%;
+    text-align: justify;
+}
+
+.nombre_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

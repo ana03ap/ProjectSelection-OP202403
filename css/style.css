@@ -11,8 +11,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
-    
-    /* border: 1px solid black;  */
+    border: 1px solid red;  
 }
 
 body {
@@ -23,39 +22,82 @@ body {
 
 /*HEADER CSS */
 
-.header, footer {
-    background-color: #3ab54a;
-    padding: 2px;
+header, footer {
+    background-color: #3ab54a;  
+}
+
+header{
+    height: 3pc;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-left: 2pc;
+   padding-right: 2pc;
+
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
+
+#menu{
+    width: 20pc;
+}
+#menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+#menu ul li {
+    display: flex;
+    gap: 2pc;
+    cursor: pointer;
+}
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
 
 #izquierdaHeader {
     display: flex;
     align-items: center;
-    margin-left: 2pc;
+   
 }
 
-.imgHeader{
-    width: 48px;
-    height: 48px;
+/* .imgHeader{
+    width: 38px;
+    height: 40px;
     margin-right: 10px;
 }
 
 .imgHeader img {
     width: 100%;
     height: 100%;
-}
+} */
 
 #izquierdaHeader h4 {
     /* color: var(--secondary-color); */
-    font-weight: 200;
+    font-weight: 500;
 }
 
+
+/* este no lo estoy usando */
 #mode {
     border: none;
     margin-right: 2pc;
@@ -63,25 +105,31 @@ nav {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     font-weight: 200;
-    /* color: var(--secondary-color); */
+
+
+    /*color: var(--secondary-color); */
     cursor: pointer;
 }
 
 /*CSS PRIMER MENSAJE */
 .message {
-    /* height: 90vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh; 
     width: 100%;
 }
 
 .message h1 {
-    margin-top: 1pc;
+    margin-top: 2pc;
     font-family: 'Tektur', cursive;
     font-weight: 800;
     text-align: center;
-    font-size: 90px;
+    font-size: 95px;
 }
 
-.languages {
+/* .languages {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -93,7 +141,7 @@ nav {
     font-family: 'Tektur', cursive;
     font-weight: 400;
     font-size: 48px;
-}
+} */
 
 /*CSS flecha */
 #arrow-down {
@@ -236,60 +284,6 @@ nav {
     cursor: pointer;
 }
 
-#team-members{
-    background-color: #3ab54a;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* css solo de las cartas, info sacada de la api */
-.cards{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-
-}
-.card{
-    /* height: 14pc; */
-    background-color: #232323;
-    margin: 0.5pc;
-    display: flex;
-    padding: 1pc;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0.5rem;
-}
-.image{
-    height: 10pc;
-    width: 10pc;
-    border-radius: 50%;
-    margin-bottom: 3pc;
-    margin-top:1pc;
-}
-.name{
-    font-size: 1.5pc;
-    align-items: center;
-}
-.cards_info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.bio{
-    width: 80%;
-    text-align: justify;
-}
-
-.nombre_img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 
