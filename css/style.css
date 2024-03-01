@@ -3,7 +3,7 @@
     --color-text: #fff; */
     --bg-body: #fff;
     --color-text: #000; 
-
+    --color-hf:#9fa9be;
 }
 
 
@@ -27,7 +27,7 @@ body {
 /*HEADER CSS */
 
 header, footer {
-    background-color: #9fa9be;  
+    background-color: var(--color-hf);  
 }
 
 header{
@@ -111,14 +111,18 @@ nav {
 
 main{
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 15pc;
+    gap: 5pc;
 }
+
+
 #title-info-img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 40vh;
+    height: 35vh;
     padding: 10pc;
    
 }
@@ -168,7 +172,7 @@ main{
 } */
 
 /*CSS flecha */
-#arrow-down {
+/* #arrow-down {
     display: flex;
     justify-content: center;
     margin-bottom: 2pc;
@@ -177,35 +181,68 @@ main{
 #arrow-down  {
     cursor: pointer;
     font-size: 6pc
-}
+} */
 
 #more_info{
-   border: 1px solid red; 
+   
    display: flex;
    justify-content: center;
    flex-direction: column;
-   align-items: center;
+   align-items:center;
+   gap: 2pc;
+
    width: 70%;
+   padding: 4pc;
+   border-radius: 0.5rem;
+   background-color: #181b22;
+   color: white;
+   
+}
+
+#txt_info p a{
+    color: var(--color-hf);
+    cursor: pointer;
+}
+
+#btns{
+    display: flex;
+    gap: 4pc;
+}
+
+#btns a{
+
+    background-color: var(--color-hf);
+    padding: 3px 3pc 3px  3pc ;
+    border-radius: 0.5rem;
+    
 }
 
 
 
 
+footer{
+    background-color: var(--color-hf);  
+    height: 4pc;
+    margin-top: 3pc;
+}
 
 
 
 
-
-
-@media screen and (max-width: 1075px ) {
-    main{
-        display:flex;
-        flex-direction: column;
-        
-    }
+@media screen and (max-width: 1087px ) {
+   
 
     #title-info-img{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1pc;
+        height: 100%;
+        
+    }
+    #infoPpl{
+        align-items: center;
+        text-align: center;
     }
     
 }
