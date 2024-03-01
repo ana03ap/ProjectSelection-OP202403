@@ -14,6 +14,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+    border: 1px solid red;
     /* 
      */
 }
@@ -146,9 +147,6 @@ main{
     text-align: left;
 }
 
-#imgPpl{
-    width: 40%;
-}
 
 #imgPpl img{
     height: 20pc;
@@ -236,13 +234,56 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1pc;
-        height: 100%;
-        
+        gap: 3pc;
+        height: 100%;    
     }
+
     #infoPpl{
         align-items: center;
         text-align: center;
     }
+
+    #infoPpl p{
+        text-align: center;
+    }
+
+    #imgPpl{
+       border: 1px solid red;
+    }
     
+}
+
+
+
+@media screen and (max-width: 655px ) {
+   
+
+ #menu{
+    display: none;
+ }
+
+ nav {
+    
+    justify-content: center;
+    
+   
+}
+
+#title-info-img{
+    padding: 0;
+}
+
+
+#btns{
+    flex-direction: column;
+}
+
+#txt_info p{
+    text-align: center;
+}
+#more_info{
+    background-color: white;
+    color: black;
+    padding: 0;
+}
 }
