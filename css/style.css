@@ -28,7 +28,7 @@ body {
 /*HEADER CSS */
 
 header, footer {
-    background-color: var(--color-hf);  
+    background-color: #5C3CB3;  
 }
 
 header{
@@ -123,8 +123,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 35vh;
-    padding: 10pc;
+    height: 50vh;
+    padding: 5pc;
    
 }
 
@@ -139,18 +139,19 @@ main{
 }
 
 #infoPpl h1{
-    font-size: 40px;
+    font-size: 50px;
 }
 #infoPpl p{
     font-size: 20px;
-    width: 60%;
+    width: 80%;
     text-align: left;
 }
 
 
 #imgPpl img{
     height: 20pc;
-    border-radius: 2rem;
+    width: 30;
+    border-radius: 1rem;
 }
 
 
@@ -187,12 +188,12 @@ main{
    justify-content: center;
    flex-direction: column;
    align-items:center;
-   gap: 2pc;
+   gap:1pc;
 
-   width: 70%;
-   padding: 4pc;
+   width: 50%;
+   padding: 2pc;
    border-radius: 0.5rem;
-   background-color: #181b22;
+   background-color: #828283;
    color: white;
    
 }
@@ -222,13 +223,6 @@ main{
 }
 
 
-
-
-footer{
-    background-color: var(--color-hf);  
-    height: 4pc;
-    margin-top: 3pc;
-}
 
 
 

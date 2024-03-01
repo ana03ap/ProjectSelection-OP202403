@@ -29,7 +29,7 @@ body {
 /*HEADER CSS */
 
 header, footer {
-    background-color: #8065bd;  
+    background-color: #5C3CB3;  
 }
 
 header{
@@ -142,8 +142,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    margin-left: 16px;
+    width: 60%;
+    margin: auto;
 
 }
 
@@ -193,8 +193,16 @@ nav {
     text-align: center;
 }
 
+/*
+Text
+*/
+#text{
+    float: none;
 
+    margin-left: auto;
 
+    margin-right: auto;
+}
 
 
 
