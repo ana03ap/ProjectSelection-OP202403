@@ -14,7 +14,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
-    border: 1px solid red;
+
     /* 
      */
 }
@@ -207,12 +207,18 @@ main{
     gap: 4pc;
 }
 
+
 #btns a{
 
     background-color: var(--color-hf);
     padding: 3px 3pc 3px  3pc ;
     border-radius: 0.5rem;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
 }
 
 
@@ -247,9 +253,11 @@ footer{
         text-align: center;
     }
 
-    #imgPpl{
-       border: 1px solid red;
+    #imgPpl img{
+        height: 18pc;
+        border-radius: 2rem;
     }
+    
     
 }
 
@@ -270,7 +278,7 @@ footer{
 }
 
 #title-info-img{
-    padding: 0;
+    padding: 10pc 0 1pc 0;
 }
 
 
