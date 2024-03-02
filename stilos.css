@@ -1,0 +1,124 @@
+:root {
+    /* --bg-body: #000;
+    --color-text: #fff; */
+    --bg-body: #fff;
+    --color-text: #000; 
+    --color-hf:#9c759c;
+    --color-btn:#b98b99;
+    
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    /* 
+     */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--color-text);
+}
+
+/*HEADER CSS */
+
+header, footer {
+    background-color:  var(--color-hf);;  
+}
+
+.navbar_brand{
+    color: #f8f9fa;
+}
+
+.custom-nav{
+    background-color:  var(--color-hf);;  
+    color: white;
+}
+header, footer{
+    height: 4pc;
+}
+
+footer{
+    margin-top: 10pc;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-left: 2pc;
+   padding-right: 2pc;
+
+}
+
+nav {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#menu{
+    width: 20pc;
+}
+
+#menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+#menu ul li {
+    display: flex;
+    gap: 2pc;
+    cursor: pointer;
+}
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+#izquierdaHeader {
+    display: flex;
+    align-items: center;
+   
+}
+#izquierda
+
+
+
+#izquierdaHeader h4 {
+    font-weight: 500;
+}
+
+#drop{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1087px ) {
+header{
+    display: none;
+}
+
+#drop{
+    display: block;
+}
+}

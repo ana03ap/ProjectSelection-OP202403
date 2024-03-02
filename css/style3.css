@@ -24,6 +24,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-body);
     color: var(--color-text);
+    overflow-x: hidden;
 }
 
 /*HEADER CSS */
