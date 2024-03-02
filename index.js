@@ -1,10 +1,10 @@
 // para la api de rick morty
 // const url = "https://rickandmortyapi.com/api/character";
-const arrowPpl= document.getElementById('arrow-down')
-const element1 = document.getElementsByClassName('element')[0]
-arrowPpl.addEventListener('click',()=>{
-    element1.scrollIntoView({behavior: 'smooth'})
-})
+// const arrowPpl= document.getElementById('arrow-down')
+// const element1 = document.getElementsByClassName('element')[0]
+// arrowPpl.addEventListener('click',()=>{
+//     element1.scrollIntoView({behavior: 'smooth'})
+// })
 /*
 
 const main = document.getElementById("root");

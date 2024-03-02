@@ -3,7 +3,7 @@
     --color-text: #fff; */
     --bg-body: #fff;
     --color-text: #000; 
-    --color-hf:#802966;
+    --color-hf:#9c759c;
     --color-btn:#b98b99;
 }
 
@@ -169,7 +169,7 @@ main{
 }
 
 #txt_info p a{
-    color: var(--color-hf);
+    color: black;
     cursor: pointer;
 }
 
@@ -181,7 +181,7 @@ main{
 
 #btns a{
 
-    background-color: var(--color-hf);
+    border: 2px solid black;
     padding: 3px 3pc 3px  3pc ;
     border-radius: 0.5rem;
     display: flex;
@@ -224,7 +224,7 @@ main{
 
     #imgPpl img{
         height: 20pc;
-        width: 30px;
+        
         border-radius: 1rem;
     }
     
@@ -233,19 +233,31 @@ main{
 }
 
 
+@media screen and (max-width: 1087px ) {
+    #txt_info p{
+        text-align: center;
+    }
+
+    
+    #btns{
+        flex-direction: column;
+    }
+    
+}
+
 
 @media screen and (max-width: 655px ) {
-   
+
+    #infoPpl h1{
+        font-size: 39px;
+    }
 
  #menu{
     display: none;
  }
 
  nav {
-    
     justify-content: center;
-    
-   
 }
 
 #title-info-img{
@@ -263,6 +275,31 @@ main{
 #more_info{
     background-color: white;
     color: black;
-    padding: 0;
+    padding: 1pc 0 1pc 0;
 }
+
+#txt_info p a{
+    font-weight: 700;
+}
+#btns a{
+    color: black;
+}
+
+
+#imgPpl img{
+    height: 15pc;
+    width: 25pc;
+    
+}
+
+}
+
+
+
+@media screen and (max-width: 515px ) {
+    #imgPpl img{
+        
+        width: 20pc;
+        padding-bottom: 3px;
+    }
 }

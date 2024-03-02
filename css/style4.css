@@ -1,11 +1,10 @@
 :root {
     /* --bg-body: #000;
     --color-text: #fff; */
-
-    
     --bg-body: #fff;
     --color-text: #000; 
-
+    --color-hf:#9c759c;
+    --color-btn:#b98b99;
 }
 
 
@@ -28,11 +27,12 @@ body {
 
 /*HEADER CSS */
 
+
 header, footer {
-    background-color: #5C3CB3;  
+    background-color:var(--color-hf);;  
 }
 
-header{
+header, footer{
     height: 4pc;
 }
 
