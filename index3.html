@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style3.css">
-    
+
     <link rel="shortcut icon" href="img/dataset.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <title>Visualization</title>
 
 </head>
+
 <body>
-    <header >
-        <nav >
+    <header>
+        <nav>
             <div id="izquierdaHeader">
                 <h4 id="title">Mobile Price</h4>
             </div>
-            
+
             <div id="menu">
                 <ul>
-                    <li><a href="index.html" id ="btn-home">Home</a></li>
-                    <li><a href="index2.html" id ="btn-team">Team</a></li>
-                    <li><a href="index3.html" id ="btn-view">Visualization</a></li>
-                    <li><a href="index4.html" id ="btn-info">Info</a></li>
+                    <li><a href="index.html" id="btn-home">Home</a></li>
+                    <li><a href="index2.html" id="btn-team">Team</a></li>
+                    <li><a href="index3.html" id="btn-view">Visualization</a></li>
+                    <li><a href="index4.html" id="btn-info">Info</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,22 +41,27 @@
 
 
 
-    <main >
+    <main>
 
 
         <section id="title">
 
             <h1>Visualizaction</h1>
             <h4>Take a look to Mobile Price</h4>
-          </section>
+        </section>
 
 
 
         <section class="element">
             <!-- texto -->
             <div class="contenido">
-                <h1>Explanation of the rationale behind our dataset selection</h1>
-                <p><strong>Element Selection:</strong> Use methods like <strong>document.getElementById,
+                <h1>Correlation graph</h1>
+
+                <p>The correlation graph is used to denote which variables are linearly related. Considering that we are
+                    interested in the Price Range variable, its highest and most notorious correlation is with the RAM
+                    Capacity. This diagram gives us a starting point on the analysis that can be done</p>
+
+                <!-- <p><strong>Element Selection:</strong> Use methods like <strong>document.getElementById,
                         document.querySelector,</strong> or <strong>document.querySelectorAll </strong>to select the
                     HTML elements you want to modify in response to the theme change.</p>
                 <p><strong>Change Event:</strong> Assign an event, such as clicking a button or changing a setting, that
@@ -64,14 +72,14 @@
                     You can change the classes of the elements using element.classList or modify the styles directly
                     with JavaScript using element.style . Alternatively, you can add classes to the
                     <strong>body</strong> or other parent elements and define styles based on these classes.
-                </p>
+                </p> -->
 
             </div>
 
             <!-- imagen -->
             <div class="imageElement">
-                <div class="imageContainer img_uno" >
-                    <img  data-aos="fade-left" src="img/diagrama1.png" alt="">
+                <div class="imageContainer img_uno">
+                    <img data-aos="fade-left" src="img/diagrama1.png" alt="">
                 </div>
 
             </div>
@@ -83,20 +91,25 @@
 
             <div class="imageElement">
                 <div class="imageContainer img_dos">
-                    <img data-aos="fade-right" src="img/diagrama1.png" alt="">
+                    <img data-aos="fade-right" src="img/diagrama2.png" alt="">
                 </div>
             </div>
 
             <div class="contenido fetch">
-                <h1>We will use Fetch to get all the information about an API</h1>
-                <p>By using the <strong>Fetch</strong> method, we enter the world of communications between web
+                <h1>Box-and-whisker plot (RAM vs. Price Range)</h1>
+
+                <p>This graph allows us to look closely at each of the price ranges, from 0 to 3, and we can see how the
+                    data varies depending on the price range. It can be seen how each time the RAM increases, the
+                    tendency is for the price of the device to increase, since the averages of the categories are higher
+                    and higher.</p>
+                <!-- <p>By using the <strong>Fetch</strong> method, we enter the world of communications between web
                     applications, making it possible to obtain complete data from an API.
                 </p>
                 <p>This action, essential in development and programming, triggers a sequence of steps that involves
                     requesting, waiting for, and receiving data, culminating in the possibility of exhaustive analysis
                     and the subsequent materialization of results. All this, framed in a dynamic context where
                     information flows without borders, ready to be discovered and used.
-                </p>
+                </p> -->
             </div>
         </section>
 
@@ -104,8 +117,11 @@
 
         <section class="element">
             <div class="contenido">
-                <h1>We will use functions, string handling and API interaction</h1>
-                <p>In this project, we will learn to create a browser using JavaScript, where we will apply essential
+                <h1>3D Diagram</h1>
+                <p>In this three-dimensional map relating RAM size, battery capacity and price range you can see how a
+                    higher price is concentrated as long as the battery and RAM have higher capacity. This visualization
+                    of the data is useful to evaluate the factors that affect the price.</p>
+                <!-- <p>In this project, we will learn to create a browser using JavaScript, where we will apply essential
                     concepts for web development. We'll use <strong>functions</strong> to handle the search logic,
                     allowing us to search and filter data in a list. In addition, we will use string management
                     <strong>techniques</strong> to compare and analyze user input, ensuring an accurate and efficient
@@ -114,57 +130,54 @@
                 <p>To take our search engine to the next level, we'll explore how to interact with APIs, allowing us to
                     pull data online to display fresh and relevant results. We will learn how to use the
                     <strong>fetch</strong> function to make requests to an API and process the responses received.
-                </p>
+                </p> -->
             </div>
 
 
             <div class="imageElement">
                 <div class="imageContainer img_tres">
-                    <img data-aos="fade-left" src="img/diagrama1.png" alt="">
+                    <img data-aos="fade-left" src="img/diagrama3.png" alt="">
                 </div>
 
             </div>
         </section>
-
-
-
-        <!-- <section class="search"> -->
-
-       <!--     
-        <section id="search">
-            
-            <div id="container-buscador">
-                <div id="izquierda-buscador">
-                    <div id="imagen-buscador">
-                        <img src="img/logo-Nav.svg" alt="logo Ricky and Morty">
-                    </div>
-
-                    <h4 id="titulo-buscador">Ricky and Morty</h4>
-                </div>
-
-                <div id="input-buscador">
-                    <input type="search" placeholder="search character..." id="input-a-buscar">
-                    <button id="buscar">Search</button>
-            </div>
-            </div>
-            
-            <div id="root"></div>
-
-             <div id="botones">
-                <button id="beforeBtn">&lt;</button>
-                <button id="afterBtn">&gt;</button>
-            </div> 
-
-        </section>
-        -->
-        <!-- </section> -->
 
 
 
         
+
+
+
+        <section class="element">
+
+            <div class="imageElement">
+                <div class="imageContainer img_cuatro">
+                    <img data-aos="fade-right" src="img/diagrama4.png" alt="">
+                </div>
+            </div>
+
+            <div class="contenido fetch">
+                <h1>Box-and-whisker plot (Battery vs. Price Range)</h1>
+
+                <p>In this case you can see how the average battery capacity of each category of data is increasing,
+                    this tells us that in general the Price Range increases a little depending on the Battery Capacity
+                    of the device.</p>
+                <!-- <p>By using the <strong>Fetch</strong> method, we enter the world of communications between web
+                applications, making it possible to obtain complete data from an API.
+            </p>
+            <p>This action, essential in development and programming, triggers a sequence of steps that involves
+                requesting, waiting for, and receiving data, culminating in the possibility of exhaustive analysis
+                and the subsequent materialization of results. All this, framed in a dynamic context where
+                information flows without borders, ready to be discovered and used.
+            </p> -->
+            </div>
+        </section>
+
+
+
     </main>
     <footer>
-           
+
     </footer>
     <!-- <script src="index.js"></script> -->
     <script src="index.js"></script>

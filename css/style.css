@@ -3,7 +3,8 @@
     --color-text: #fff; */
     --bg-body: #fff;
     --color-text: #000; 
-    --color-hf:#9fa9be;
+    --color-hf:#802966;
+    --color-btn:#b98b99;
 }
 
 
@@ -28,13 +29,16 @@ body {
 /*HEADER CSS */
 
 header, footer {
-    background-color: #5C3CB3;  
+    background-color:  var(--color-hf);;  
 }
 
-header{
+header, footer{
     height: 4pc;
 }
 
+footer{
+    margin-top: 10pc;
+}
 header{
     display: flex;
     align-items: center;
@@ -88,24 +92,14 @@ nav {
 }
 #izquierda
 
-/* .imgHeader{
-    width: 38px;
-    height: 40px;
-    margin-right: 10px;
-}
 
-.imgHeader img {
-    width: 100%;
-    height: 100%;
-} */
 
 #izquierdaHeader h4 {
-    /* color: var(--secondary-color); */
     font-weight: 500;
 }
 
 
-/* este no lo estoy usando */
+
 
 
 /*CSS PRIMER MENSAJE */
@@ -123,7 +117,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50vh;
+    
     padding: 5pc;
    
 }
@@ -156,31 +150,7 @@ main{
 
 
 
-/* .languages {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 2pc 0 2pc 0;
-}
 
-.languages p {
-    margin-right: 1pc;
-    font-family: 'Tektur', cursive;
-    font-weight: 400;
-    font-size: 48px;
-} */
-
-/*CSS flecha */
-/* #arrow-down {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2pc;
-}
-
-#arrow-down  {
-    cursor: pointer;
-    font-size: 6pc
-} */
 
 #more_info{
    
@@ -251,6 +221,13 @@ main{
         height: 18pc;
         border-radius: 2rem;
     }
+
+    #imgPpl img{
+        height: 20pc;
+        width: 30px;
+        border-radius: 1rem;
+    }
+    
     
     
 }

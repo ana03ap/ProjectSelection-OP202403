@@ -1,12 +1,12 @@
 :root {
     /* --bg-body: #000;
     --color-text: #fff; */
-
-    
     --bg-body: #fff;
     --color-text: #000; 
-
+    --color-hf:#802966;
+    --color-btn:#b98b99;
 }
+
 
 
 
@@ -29,10 +29,10 @@ body {
 /*HEADER CSS */
 
 header, footer {
-    background-color:#5C3CB3;  
+    background-color:var(--color-hf);;  
 }
 
-header{
+header, footer{
     height: 4pc;
 }
 
@@ -88,17 +88,6 @@ nav {
    
 }
 
-/* .imgHeader{
-    width: 38px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.imgHeader img {
-    width: 100%;
-    height: 100%;
-} */
-
 #izquierdaHeader h4 {
     /* color: var(--secondary-color); */
     font-weight: 500;
@@ -109,7 +98,7 @@ nav {
 
 #title{
     padding: 5pc 0 5pc 0;
-    height: 90hv;
+    /* height: 90hv; */
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -123,7 +112,7 @@ nav {
 }
 
 #title h4{
-    font-size: 45px;
+    font-size: 25px;
     color: rgb(133, 133, 133);
     
 }
@@ -143,12 +132,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    margin-left: 16px;
+    padding-left: 16px;
 
 }
 
 .contenido h1 {
-    
     font-weight: 900;
     margin-bottom: 2pc;
 }
@@ -169,15 +157,15 @@ nav {
     width: 100%;
 }
 
-.img_uno {
+.img_uno, .img_dos {
     width: 496px;
     height: 423px;
 
 }
-.img_dos {
+/* .img_dos {
     width: 496px;
     height: 216px;
-}
+} */
 
 .img_tres {
     width: 496px;
