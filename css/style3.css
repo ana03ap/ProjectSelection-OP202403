@@ -230,11 +230,20 @@ nav {
 
 
 @media screen and (max-width: 1057px ) {
-    #root{
-        grid-template-columns: 1fr;
-    }
+    
+#title h1{
+    font-size: 50px;
+
+}
+
 }
 @media screen and (max-width: 800px ) {
+
+    #title h1{
+        font-size: 40px;
+    
+    }
+
     .element{
         flex-direction: column;
         align-items: center;
