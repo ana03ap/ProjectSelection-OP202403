@@ -82,6 +82,24 @@ nav {
 
 
 
+.bgcolor{
+    background-color: var(--color-hf);;
+}
+.custom-nav{
+    background-color:  var(--color-hf);;  
+    color: white;
+}
+
+#offcanvasNavbarLabel {
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+
+#drop{
+    display: none;
+}
 
 #izquierdaHeader {
     display: flex;
@@ -264,11 +282,18 @@ Text
     
     }
 
+    header{
+        display: none;
+    }
+    #drop{
+        display: block;
+    }
+
     #root{
         grid-template-columns: 1fr;
     }
 }
-@media screen and (max-width: 800px ) {
+/* @media screen and (max-width: 800px ) {
     .element{
         flex-direction: column;
         align-items: center;
@@ -303,4 +328,4 @@ Text
         align-items: center;
         justify-content: center;
     }
-}
+} */

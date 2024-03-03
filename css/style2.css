@@ -76,6 +76,19 @@ nav {
 
 
 
+.bgcolor{
+    background-color: var(--color-hf);;
+}
+
+
+#offcanvasNavbarLabel {
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+
+
 
 #izquierdaHeader {
     display: flex;
@@ -86,6 +99,9 @@ nav {
 #izquierdaHeader h4 {
     /* color: var(--secondary-color); */
     font-weight: 500;
+}
+#drop{
+    display: none;
 }
 
 #title{
@@ -130,14 +146,11 @@ gap: 5pc
 .card{
     color: white;
     /* height: 14pc; */
-    background-color: #727070;
+    background-color: #727070 !important;
     margin: 0.5pc;
     display: flex;
     padding: 1pc 3pc;
-
     justify-content: center;
-    /* flex-direc
-    tion: column; */
     align-items: center;
     border-radius: 0.5rem;
     width: 60%;
@@ -175,7 +188,21 @@ gap: 5pc
 @media screen and (max-width: 1070px ) {
 .card{
     flex-direction: column;
+    padding: 1pc 1pc;
+    width: 90%;
 }
 
+#drop{
+    display: block;
+}
+
+header{
+    display: none;
+}
+
+#title h1{
+    font-size: 45px;
+
+}
 
 }

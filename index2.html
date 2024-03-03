@@ -1,124 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style2.css">
-  
+
   <link rel="shortcut icon" href="img/dataset.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Project selecion</title>
 
 </head>
+
 <body>
-   
-  <header >
-    <nav >
-        <div id="izquierdaHeader">
-            <h4 id="title">Team members</h4>
-        </div>
-        
-        <div id="menu">
-            <ul>
-              <li><a href="index.html" id ="btn-home">Home</a></li>
-              <li><a href="index2.html" id ="btn-team">Team</a></li>
-              <li><a href="index3.html" id ="btn-view">Visualization</a></li>
-              <li><a href="index4.html" id ="btn-info">Info</a></li>
-            </ul>
-        </div>
+
+  <header>
+    <nav>
+      <div id="izquierdaHeader">
+        <h4 id="title">Team members</h4>
+      </div>
+
+      <div id="menu">
+        <ul>
+          <li><a href="index.html" id="btn-home">Home</a></li>
+          <li><a href="index2.html" id="btn-team">Team</a></li>
+          <li><a href="index3.html" id="btn-view">Visualization</a></li>
+          <li><a href="index4.html" id="btn-info">Info</a></li>
+        </ul>
+      </div>
     </nav>
-</header>
+  </header>
 
 
 
-<main>
-<section id="title">
 
-  <h1>Team</h1>
-  <h4>Meet our talented team</h4>
-</section>
+  <div id="drop">
 
-<section id="team">
+
+    <nav class="navbar  fixed-top bgcolor">
+      <div class="container-fluid custom-nav" id="offcanvasNavbarLabel">
+        <a class="navbar-brand custom-nav" id="offcanvasNavbarLabel" href="#">Mobile Price</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mobile Price</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index2.html">Team</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="index3.html">Visualization</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index4.html">info</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </nav>
+  </div>
+
+
+
+
+  <main>
+    <section id="title">
+
+      <h1>Team</h1>
+      <h4>Meet our talented team</h4>
+    </section>
+
+    <section id="team">
 
 
       <div class="card">
-          <div class="pic">
-              <h1 class = "name">Cesar Caro </h1>
-              <img class = "image"src="img/cesar.jpeg" alt="cesar"/>
-          </div>
+        <div class="pic">
+          <h1 class="name">Cesar Caro </h1>
+          <img class="image" src="img/cesar.jpeg" alt="cesar" />
+        </div>
 
-          <div class="cards_info">
-              <p class="bio">Hi, I’m César Caro, I’m 27 years old, I’m located in Barranquilla - Colombia, I’m studying System Engineering and Computing at Universidad del Norte, I’m in the last semester of my major and I’ve been working since the last 5+ years at Thirdera (now becoming part of Cognizant) as a Cloud Engineer and ServiceNow Technical Consultant, my role is Senior Developer but also my seniority is Team Manager, with experience in several tools, frameworks, environments, programming languages, etc. I prefer back end development but I also have experience with front end development.</p>
-          </div>
-          
+        <div class="cards_info">
+          <p class="bio">Hi, I’m César Caro, I’m 27 years old, I’m located in Barranquilla - Colombia, I’m studying
+            System Engineering and Computing at Universidad del Norte, I’m in the last semester of my major and I’ve
+            been working since the last 5+ years at Thirdera (now becoming part of Cognizant) as a Cloud Engineer and
+            ServiceNow Technical Consultant, my role is Senior Developer but also my seniority is Team Manager, with
+            experience in several tools, frameworks, environments, programming languages, etc. I prefer back end
+            development but I also have experience with front end development.</p>
+        </div>
+
       </div>
 
 
       <div class="card">
-          <div class="pic">
-              <h1 class = "name">Sebastian Arteta</h1>
-              <img class = "image"src="img/sebastian.jpeg" alt="sebastian"/>
-          </div>
+        <div class="pic">
+          <h1 class="name">Sebastian Arteta</h1>
+          <img class="image" src="img/sebastian.jpeg" alt="sebastian" />
+        </div>
 
-          <div class="cards_info">
-              <p class="bio">Hi, I’m Sebastian Arteta Padilla, I’m 18 years old, I'm studying System Engineering and Computing at Universidad del Norte in Barranquilla - Colombia, I'm in seventh semester of my major. I like working in back-end development, database management and troubleshooting. I mainly use languages such as Java, Python, SQL, HTML. I like learning every day and meeting new people.</p>
-          </div>
-          
-      </div>
+        <div class="cards_info">
+          <p class="bio">Hi, I’m Sebastian Arteta Padilla, I’m 18 years old, I'm studying System Engineering and
+            Computing at Universidad del Norte in Barranquilla - Colombia, I'm in seventh semester of my major. I like
+            working in back-end development, database management and troubleshooting. I mainly use languages such as
+            Java, Python, SQL, HTML. I like learning every day and meeting new people.</p>
+        </div>
 
-      <div class="card">
-          <div class="pic">
-              <h1 class = "name">Darwin Charris </h1>
-              <img class = "image"src="img/darwin.jpeg" alt="cesar"/>
-          </div>
-
-          <div class="cards_info">
-              <p class="bio">Hello, my name is Darwin Charris, I am 20 years old and I am in my seventh semester of systems engineering at Universidad del Norte. I like to work in data analysis and database management. I usually use languages like Java, Python, JavaScript and SQL.</p>
-          </div>
-          
-      </div>
-
-
-      <div class="card">
-          <div class="pic">
-              <h1 class = "name">Ana Ardila </h1>
-              <img class = "image"src="img/ana.jpeg" alt="ana"/>
-          </div>
-
-          <div class="cards_info">
-              <p class="bio">Hi, I'm ana, I'm 20 years old and I'm in my 7th semester of systems engineering. I like to work in frontend development although lately I've been gaining experience with backend development in database management. I like both approaches and I feel comfortable in both of them, the technologies I usually use are React and Node js and in programming languages I usually use are javascritp, java and python. 
-
-                </p>
-          </div>
-          
       </div>
 
       <div class="card">
         <div class="pic">
-            <h1 class = "name">Omar Cifuentes </h1>
-            <img class = "image"src="img/omar.jpeg" alt="omar"/>
+          <h1 class="name">Darwin Charris </h1>
+          <img class="image" src="img/darwin.jpeg" alt="cesar" />
         </div>
 
         <div class="cards_info">
-            <p class="bio">Hello, I'm Omar Darío Cifuentes Laverde, I'm 20 years old and I'm currently in the seven semester of System Engineering and Computing at Universidad del Norte in Barranquilla, Colombia. I'm passionate about frontend development and have some experience in backend as well. Although I have basic knowledge of databases, I particularly enjoy working on designing and implementing attractive and functional user interfaces. My preferred languages are Python, SQL, and HTML. I love learning every day and meeting new people within the tech community.</p>
+          <p class="bio">Hello, my name is Darwin Charris, I am 20 years old and I am in my seventh semester of systems
+            engineering at Universidad del Norte. I like to work in data analysis and database management. I usually use
+            languages like Java, Python, JavaScript and SQL.</p>
         </div>
-        
-    </div>
 
-  
-</section>
+      </div>
 
 
-<footer>
+      <div class="card">
+        <div class="pic">
+          <h1 class="name">Ana Ardila </h1>
+          <img class="image" src="img/ana.jpeg" alt="ana" />
+        </div>
 
-</footer>
-</main>
+        <div class="cards_info">
+          <p class="bio">Hi, I'm ana, I'm 20 years old and I'm in my 7th semester of systems engineering. I like to work
+            in frontend development although lately I've been gaining experience with backend development in database
+            management. I like both approaches and I feel comfortable in both of them, the technologies I usually use
+            are React and Node js and in programming languages I usually use are javascritp, java and python.
+
+          </p>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="pic">
+          <h1 class="name">Omar Cifuentes </h1>
+          <img class="image" src="img/omar.jpeg" alt="omar" />
+        </div>
+
+        <div class="cards_info">
+          <p class="bio">Hello, I'm Omar Darío Cifuentes Laverde, I'm 20 years old and I'm currently in the seven
+            semester of System Engineering and Computing at Universidad del Norte in Barranquilla, Colombia. I'm
+            passionate about frontend development and have some experience in backend as well. Although I have basic
+            knowledge of databases, I particularly enjoy working on designing and implementing attractive and functional
+            user interfaces. My preferred languages are Python, SQL, and HTML. I love learning every day and meeting new
+            people within the tech community.</p>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <footer>
+
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

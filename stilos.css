@@ -1,6 +1,5 @@
 :root {
-    /* --bg-body: #000;
-    --color-text: #fff; */
+  
     --bg-body: #fff;
     --color-text: #000; 
     --color-hf:#9c759c;
@@ -39,6 +38,14 @@ header, footer {
 
 .custom-nav{
     background-color:  var(--color-hf);;  
+    color: white;
+}
+
+#offcanvasNavbarLabel {
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+}
+.offcanvas-title#offcanvasNavbarLabel {
     color: white;
 }
 header, footer{

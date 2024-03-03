@@ -5,6 +5,7 @@
     --color-text: #000; 
     --color-hf:#9c759c;
     --color-btn:#b98b99;
+    
 }
 
 
@@ -15,7 +16,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
-
+  
     /* 
      */
 }
@@ -31,6 +32,7 @@ body {
 header, footer {
     background-color:  var(--color-hf);;  
 }
+
 
 header, footer{
     height: 4pc;
@@ -98,6 +100,21 @@ nav {
     font-weight: 500;
 }
 
+#drop{
+    display: none;
+}
+
+.bgcolor{
+    
+    background-color: var(--color-hf);;
+}
+
+
+#offcanvasNavbarLabel {
+    font-weight: 500;
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+}
 
 
 
@@ -228,12 +245,16 @@ main{
         border-radius: 1rem;
     }
     
+    header{
+        display: none;
+    }
     
-    
-}
+    #drop{
+        display: block;
+    }
 
 
-@media screen and (max-width: 1087px ) {
+
     #txt_info p{
         text-align: center;
     }
@@ -243,7 +264,11 @@ main{
         flex-direction: column;
     }
     
+    
+    
 }
+
+
 
 
 @media screen and (max-width: 655px ) {
@@ -303,3 +328,4 @@ main{
         padding-bottom: 3px;
     }
 }
+

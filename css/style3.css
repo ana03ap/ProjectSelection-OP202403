@@ -5,6 +5,7 @@
     --color-text: #000; 
     --color-hf:#9c759c;
     --color-btn:#b98b99;
+    
 }
 
 
@@ -16,6 +17,8 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+    overflow-x: hidden;
+   
     /* 
      */
 }
@@ -24,8 +27,10 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-body);
     color: var(--color-text);
-    overflow-x: hidden;
+    
+    
 }
+
 
 /*HEADER CSS */
 
@@ -41,9 +46,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-   padding-left: 2pc;
-   padding-right: 2pc;
-
+    padding-left: 2pc;
+    padding-right: 2pc;
 }
 
 nav {
@@ -52,7 +56,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
 #menu{
@@ -96,6 +99,22 @@ nav {
 
 
 
+
+
+.bgcolor{
+    background-color: var(--color-hf);;
+}
+
+
+#offcanvasNavbarLabel {
+    font-weight: 500;
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+}
+
+#drop{
+    display: none;
+}
 
 #title{
     padding: 5pc 0 5pc 0;
@@ -163,10 +182,7 @@ nav {
     height: 423px;
 
 }
-/* .img_dos {
-    width: 496px;
-    height: 216px;
-} */
+
 
 .img_tres {
     width: 496px;
@@ -204,79 +220,21 @@ nav {
         width: 100%;
         margin: 0;
     }
-    #root{
-        grid-template-columns: 1fr;
-    }
-    .message h1{
-        font-size: 4pc;
-    }
-    .message p{
-        font-size: 1.5pc;
-    }
-    #titulo-buscador{
-        display: none;
-    }
-    #input-buscar input{
-        padding: 0.4pc;
-        border-radius: 6px;
-        border:none;
-    }
-    #arrow-up{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 
 
 @media screen and (max-width: 1057px ) {
     
-#title h1{
-    font-size: 50px;
-
-}
-
-}
-@media screen and (max-width: 800px ) {
-
     #title h1{
-        font-size: 40px;
-    
+        font-size: 50px;
+    }
+    #drop{
+        display: block;
     }
 
-    .element{
-        flex-direction: column;
-        align-items: center;
-        padding: 1pc;
-        height: auto;
-        gap: 1pc;
-        margin:1pc 0;
-    }
-    .element:nth-child(2){
-        flex-direction: column-reverse;
-    }
-    .element div{
-        width: 100%;
-        margin: 0;
-    }
-    .message h1{
-        font-size: 4pc;
-    }
-    .message p{
-        font-size: 1.5pc;
-    }
-    #titulo-buscador{
+    header{
         display: none;
     }
-    #input-buscar input{
-        padding: 0.4pc;
-        border-radius: 6px;
-        border:none;
-    }
-    #arrow-up{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 }
