@@ -67,28 +67,54 @@
 
   <main>
 
-    <section id="title" class ="parrafo">
+    <section id="title" class="parrafo">
       <h1>Our first model selection</h1>
 
     </section>
 
 
-    <section id="objetivos" class ="parrafo">
+    <section id="objetivos" class="parrafo">
 
       <h3>Objectives for estimation.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit totam recusandae temporibus sed rerum nemo
-        explicabo commodi. Voluptates vel delectus minima nostrum repellat. Quaerat, numquam. Animi consequatur nihil
-        dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque quis iure sit alias sequi.
-        Excepturi a saepe illo officiis. Incidunt illo omnis odit ut rerum blanditiis ratione perspiciatis voluptatibus?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore reiciendis maiores similique neque, soluta
-        quam eaque excepturi architecto perspiciatis natus ut sunt provident eos voluptas at totam impedit assumenda.
-        Veritatis.</p>
+      <p>This model aims to predict to which price range a mobile belongs (0 low cost, 1 medium cost, 2 high cost and 3
+        very high cost) where the response variable in the context of the data is prize_rank, so the model to be trained
+        will be a classification model because it is a categorical variable. For the selection of the input variables,
+        initially all the variables of the dataset were analyzed and the following graph shows their relevance in the
+        classification model. </p>
+
+      <img src="img/img1.jpeg" alt="img1">
+
+      <!-- <p>Now, different combinations between variables were made (always in the context of the data and the problem) and
+        the scores of the tested model were analyzed, where the variables:
+        battery_power,dual_sim,fc,int_memory,n_cores,pc,px_height,px_width,ram,talk_time. Where the
+        score obtained is 0.905; in this case there would be 10 input variables that when analyzing the importance in
+        the model we obtain the following</p>HAY UN ERROR AQUI  -->
+
+      <p>Now, different combinations between variables were made (always in the context of the data and the problem) and
+        the scores of the tested model were analyzed, where the variables:
+      </p>
+
+      <span>battery power,dual sim,fc,int memory,ncores,pc,pxheight,pxwidth,ram,talktime. Where the
+        score obtained is 0.905; in this case there would be 10 input variables that when analyzing the importance in
+        the model we obtain the following</span>
+
+      <img src="img/img2.jpeg" alt="img2">
+
+      <p>So there are variables with little importance in the model, so we tried to eliminate some of these variables in
+        order to simplify the number of model inputs and maintain a considerably high score. Therefore, the eliminated
+        variable is dual_sim obtaining a score of 0.901 which, although it is lower than the previous one obtained, the
+        difference is compensated with the elimination of an input variable.
+        In conclusion for this problem we will implement a classification model using machine learning that will predict
+        a price range for a mobile from the specifications of its components, which are: the Gb of Ram memory, the mha
+        of battery, the number of pixels in width and length of the screen, the internal memory, the hours of battery
+        life, the megapixels of the main and secondary camera and the number of processor cores.
+      </p>
     </section>
 
 
 
 
-    <section id="details" class ="parrafo">
+    <section id="details" class="parrafo">
 
       <h3>Details about your initial model selection.</h3>
       <P>Considering that the variable to be estimated will be the price range, this variable is categorical. A Random
@@ -101,7 +127,8 @@
         over-fitting that make the model less accurate.
         <br>
 
-        To solve this problem, <strong>the RandomForestClassifier model</strong>  is based on the ensemble learning technique known as
+        To solve this problem, <strong>the RandomForestClassifier model</strong> is based on the ensemble learning
+        technique known as
         Random Forests, which combines multiple decision trees and makes a prediction by averaging the predictions of
         each tree that composes it, this generally makes its accuracy higher compared to using only one decision tree,
         avoiding failures in the tree settings.
@@ -109,40 +136,45 @@
         This model was chosen because when investigating what kind of models we could select, this one seemed
         interesting and more robust compared to other types of classification models. To define the model we used 90
         decision trees, since by doing several tests and changing the number of trees, it gave us a score as close to 1,
-        it guarantees us more accuracy.</P>
+        it guarantees us more accuracy.
+      </P>
 
-        <a href="https://colab.research.google.com/drive/1f3gNZc_s0V8sAGfXrhQyn2Q9VfE6L5tV?usp=sharing">Click here to check the model on Google Colaboratory</a>
+      <a href="https://colab.research.google.com/drive/1f3gNZc_s0V8sAGfXrhQyn2Q9VfE6L5tV?usp=sharing">Click here to
+        check the model on Google Colaboratory</a>
     </section>
 
 
 
 
 
-    <section id="methods" class ="parrafo">
+    <section id="methods" class="parrafo">
 
       <h3>Information on validation methods and the metrics employed.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit totam recusandae temporibus sed rerum nemo
-        explicabo commodi. Voluptates vel delectus minima nostrum repellat. Quaerat, numquam. Animi consequatur nihil
-        dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque quis iure sit alias sequi.
-        Excepturi a saepe illo officiis. Incidunt illo omnis odit ut rerum blanditiis ratione perspiciatis voluptatibus?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore reiciendis maiores similique neque, soluta
-        quam eaque excepturi architecto perspiciatis natus ut sunt provident eos voluptas at totam impedit assumenda.
-        Veritatis.</p>
+      <p>For our machine learning model, we are using the holdout validation method, where we split our dataset into a
+        training set (70%) and a test set (30%).
+
+        The metric employed to evaluate the performance of our RandomForestClassifier model is accuracy. We obtained a
+        score of 0.9083333333333333, indicating that our model has correctly predicted 90.83% of the samples in the test
+        set.</p>
     </section>
 
 
 
 
-    <section id="conclusiones" class ="parrafo">
+
+
+    <section id="conclusiones" class="parrafo">
 
       <h3>Preliminary conclusions drawn from your analysis to date.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit totam recusandae temporibus sed rerum nemo
-          explicabo commodi. Voluptates vel delectus minima nostrum repellat. Quaerat, numquam. Animi consequatur nihil
-          dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque quis iure sit alias sequi.
-          Excepturi a saepe illo officiis. Incidunt illo omnis odit ut rerum blanditiis ratione perspiciatis voluptatibus?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore reiciendis maiores similique neque, soluta
-          quam eaque excepturi architecto perspiciatis natus ut sunt provident eos voluptas at totam impedit assumenda.
-          Veritatis.</p>
+        <p>
+          Of course, here's a shorter version in English:
+
+          In summary, our initial analysis shows promise in developing an effective classification model to predict
+          mobile phone price ranges based on their specifications. We identified key variables such as battery power,
+          camera resolution, and RAM, crucial for predictive accuracy. By implementing a Random Forest Classifier with
+          90 decision trees, we achieved a preliminary accuracy of 90.83% on the test set. These findings suggest our
+          machine learning approach holds potential for accurately classifying mobile phone prices. However, further
+          validation is needed to confirm the model's reliability.</p>
     </section>
 
 
