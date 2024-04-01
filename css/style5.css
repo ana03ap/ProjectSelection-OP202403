@@ -64,6 +64,10 @@ nav {
     width: 20pc;
 }
 
+#details a{
+    font-size: large;
+    color:  var(--color-hf);
+}
 
 
 #menu  li {

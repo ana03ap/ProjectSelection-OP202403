@@ -167,7 +167,10 @@ main{
 
 
 
-
+#info-first-model a{
+    font-size: large;
+    color:  var(--color-hf);
+}
 
 #more_info{
    
