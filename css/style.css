@@ -166,10 +166,35 @@ main{
 }
 
 
+#first-model{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    width: 40%;
+    
+    box-shadow: 2px 2px 3px black;
+    border-radius: 1.5pc;
+}
 
+#first-model:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  
+}
 #info-first-model a{
     font-size: large;
     color:  var(--color-hf);
+    list-style: none;
+    text-decoration: none;
+}
+
+#info-first-model p{
+    font-size: 1.5pc;
+}
+#first_model_img img{
+    width: 10pc;
+    height: 10pc;
+    
 }
 
 #more_info{
