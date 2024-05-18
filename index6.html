@@ -89,56 +89,65 @@
             <ul>
                 <li>
                     <strong>
-                        Ability to Capture Non-Linear Relationships: </strong>MLPs are capable of capturing non-linear relationships
-                    in the data thanks to their multi-layer neural network structure, making them suitable for our task where
+                        Ability to Capture Non-Linear Relationships: </strong>MLPs are capable of capturing non-linear
+                    relationships
+                    in the data thanks to their multi-layer neural network structure, making them suitable for our task
+                    where
                     the relationship between phone specifications and price range may not be linear.
                 </li>
 
                 <li>
                     <strong>
-                        Flexibility in Architecture: </strong> MLPs allow flexibility in architecture design, including the number and
-                        size of hidden layers. In our case, we designed a network with multiple hidden layers and varying sizes to
-                        accommodate the complexity of phone specifications.
+                        Flexibility in Architecture: </strong> MLPs allow flexibility in architecture design, including
+                    the number and
+                    size of hidden layers. In our case, we designed a network with multiple hidden layers and varying
+                    sizes to
+                    accommodate the complexity of phone specifications.
                 </li>
                 <li>
                     <strong>
-                        Handling Large Datasets Efficiently: </strong>MLPs can efficiently handle large and complex datasets, which is
-                        beneficial for our task where we have a plethora of phone specifications to train the model.
+                        Handling Large Datasets Efficiently: </strong>MLPs can efficiently handle large and complex
+                    datasets, which is
+                    beneficial for our task where we have a plethora of phone specifications to train the model.
                 </li>
                 <li>
                     <strong>
-                        Built-in Regularization: </strong>  MLPs come with built-in regularization methods, such as the alpha
-                        regularization parameter we utilized, which helps prevent overfitting by penalizing large weights in the
-                        network.
+                        Built-in Regularization: </strong> MLPs come with built-in regularization methods, such as the
+                    alpha
+                    regularization parameter we utilized, which helps prevent overfitting by penalizing large weights in
+                    the
+                    network.
                 <li>
                     <strong>
-                        Proven Performance in Classification Problems: </strong>MLPs have demonstrated good performance across a wide
-                        range of classification problems, giving us confidence in their ability to accurately predict phone price
-                        ranges based on provided specifications.
+                        Proven Performance in Classification Problems: </strong>MLPs have demonstrated good performance
+                    across a wide
+                    range of classification problems, giving us confidence in their ability to accurately predict phone
+                    price
+                    ranges based on provided specifications.
                 </li>
             </ul>
-           
 
 
-    
+
+
 
             Regarding the specific details of the MLP classifier used, it has the following characteristics:
 
             <li>
-                Hidden Layer Sizes: (10, 20, 20, 10, 10, 20, 10, 20, 20, 10) 
+                Hidden Layer Sizes: (10, 20, 20, 10, 10, 20, 10, 20, 20, 10)
             </li>
 
             <li>
                 Activation Function: ReLU (Rectified Linear Unit)
             </li>
 
-            <li >
+            <li>
                 Regularization Parameter (Alpha): 0.001
             </li>
-           
+
             </p>
 
-            <img style="width: 80%;"src="img/mlpclassifier.png" alt="mlp">
+            <img style="width: 80%;" src="img/mlpclassifier.png" alt="mlp">
             <a href="https://colab.research.google.com/drive/1LAjjVn5aaU2L7KJLMXPgli_xOo3SmMtI?usp=sharing">Click here
                 to check the model on Google Colaboratory</a>
         </section>
@@ -151,13 +160,30 @@
 
             <h3>Information on validation methods and the metrics employed.</h3>
             <p>
-                For our machine learning model, we are using the holdout validation method, where we split our dataset into a
+                For our machine learning model, we are using the holdout validation method, where we split our dataset
+                into a
                 training set (70%) and a test set (30%).
+
 
 
             </p>
 
-            
+            <p>To assess the performance of our model, we implemented rigorous validation methods along with the
+                accuracy metric. This metric was chosen because all classes carry equal weight in our classification
+                problem. Additionally, we ran the validation code 1000 times to obtain a more robust distribution of the
+                metric. On average, our accuracy hovers around 0.80, indicating a high level of precision in classifying
+                the samples</p>
+
+            <h3>distribution of accuracy</h3>
+            <img src="img/diagrama8.png" alt="">
+            <h3>loss function</h3>
+            <img src="img/diagrama9.png" alt="">
+
+
+            <h3>confusion matrix Normalize pred</h3>
+            <img src="img/diagrama11.png" alt="">
+
+
         </section>
 
 
@@ -169,8 +195,17 @@
 
             <h3>Preliminary conclusions drawn from your analysis to date.</h1>
                 <p>
+                    Por supuesto, aquí tienes una versión revisada:
 
-                   </p>
+                    "In conclusion, our MLP classifier has
+                    shown promising performance in predicting the price range of mobiles from 0 to 3, where 0 represents
+                    the least expensive and 3 the most expensive. Upon analyzing the confusion matrix, we observe strong
+                    predictive accuracy, correctly categorizing mobiles in price range 0 with 91% accuracy, range 1 with
+                    73% accuracy, range 2 with 79% accuracy, and range 3 with 79% accuracy. However, we note a minor
+                    issue where mobiles in range 2 are occasionally misclassified as belonging to range 1, occurring
+                    approximately 18% of the time. This highlights an area for potential refinement to improve overall
+                    model accuracy and reliability."
+                </p>
         </section>
 
 
@@ -180,7 +215,7 @@
             <h3>How does this model compare to the first one in terms of metrics? </h1>
                 <p>
 
-                   .</p>
+                    .</p>
         </section>
 
     </main>
