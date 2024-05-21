@@ -1,62 +1,49 @@
 :root {
-    /* --bg-body: #000;
-    --color-text: #fff; */
     --bg-body: #fff;
-    --color-text: #000; 
-    --color-hf:#9c759c;
-    --color-btn:#b98b99;
-    
-}
-
-
-
-
-* {
+    --color-text: #000;
+    --color-hf: #9c759c;
+    --color-btn: #b98b99;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     outline: none;
-    overflow-x: hidden;
-   
-    /* 
-     */
-}
-
-body {
+    box-sizing: border-box; /* Agregado */
+  }
+  
+  body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-body);
     color: var(--color-text);
-    
-    
-}
-
-
-/*HEADER CSS */
-
-header, footer {
-    background-color:var(--color-hf);;  
-}
-
-header, footer{
+  }
+  
+  /* HEADER CSS */
+  header, footer {
+    background-color: var(--color-hf);
+  }
+  
+  header, footer {
     height: 4pc;
-}
-
-header{
+  }
+  
+  header {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 2pc;
     padding-right: 2pc;
-}
-
-nav {
+  }
+  
+  nav {
     color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
 #menu{
     width: 20pc;
